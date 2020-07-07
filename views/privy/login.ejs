@@ -4,7 +4,7 @@
 	<div class="row">
 		<div class="col-md-6 col-xs-10 body">
 			<h2 class="text-center py-4 brand-color">Login</h2>
-			<form action="/" method="POST" class="mt-5">
+			<form action="http://pretest-qa.dcidev.id/api/v1/oauth/sign_in" method="POST" class="mt-5">
 				<div class="form-group mx-5">
 					<input class="form-control" type="text" name="phone" placeholder="Your phone number">
 				</div>
@@ -12,7 +12,7 @@
 					<input class="form-control" type="password" name="password" placeholder="password">
 				</div>
 				<div class="form-group mx-5">
-				<button class="btn btn-lg btn-primary btn-block">Submit</button>
+				<button href="/profileUser" class="btn btn-lg btn-primary btn-block">Submit</button>
 				<a href="/">Go Back</a>
 				<a class="pull-right" href="/register">Register</a>
 				</div>

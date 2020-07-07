@@ -1,0 +1,19 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-xs-10 body">
+			<h2 class="text-center py-4 brand-color">Upload Profil Picture</h2>
+			<form action="http://pretest-qa.dcidev.id/api/v1/uploads/profile" method="POST" class="mt-5">
+				<div class="form-group mx-5">
+					<input class="form-control" type="file" name="image">
+				</div>
+				<div class="form-group mx-5">
+				<button href="/profileUser" class="btn btn-lg btn-primary btn-block">Submit</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>

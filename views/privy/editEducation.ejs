@@ -1,0 +1,24 @@
+<%- include("../partials/header") %>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-6 col-xs-10 body">
+			<h2 class="text-center py-4 brand-color">Edit Education</h2>
+			<form action="http://pretest-qa.dcidev.id/api/v1/profile/education" method="POST" class="mt-5">
+				<div class="form-group mx-5">
+					<input class="form-control" type="text" name="school_name" placeholder="School name">
+				</div>
+				<div class="form-group mx-5">
+					<input class="form-control" type="date" name="graduation_time">
+				</div>
+				<div class="form-group mx-5">
+				<button href="/profile" class="btn btn-lg btn-primary btn-block">Submit</button>
+				<a href="/profile">Go Back</a>
+				<a class="pull-right" href="/login">Login</a>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<%- include("../partials/footer") %>
