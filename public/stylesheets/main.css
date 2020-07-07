@@ -1,0 +1,86 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: Varela;
+}
+body{
+	background-color: rgba(28,99,182,0.6);
+}
+
+.body{
+	border: 1px solid #ced4da;
+	position: relative;
+	border-radius: 20px;
+	margin: 100px auto;
+	height: 100%;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	background-color: white;
+}
+.pull-right{
+	float: right;
+}
+.brand-color{
+	color: rgba(28,99,182,1);
+}
+
+.otpinput{
+	display: inline;
+}
+
+.inline{
+	margin-top: 100px;
+	width: 40px;
+	float: left;
+	margin: 10px;
+	display: inline;
+}
+
+.headProfile{
+	background-color: white;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	position: relative;
+	margin: 40px 200px;
+	border-radius: 10px;
+	height: 100%;	
+}
+
+.bodyProfile{
+	background-color: white;
+	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+	position: relative;
+	margin: 40px 200px;
+	border-radius: 10px;
+	height: 100%;	
+}
+
+.headProfile .header-image {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: 100%;
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.headProfile .avatar{
+	position: absolute;
+	border-radius: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 150px;
+	left: 0;
+	right: 0;
+	text-align: center;
+	height:120px;
+	width: 120px;
+	display: block;
+}
+
+.user-title{
+	display: flex;
+	justify-content: center;
+	margin-top: 120px;
+	position: relative;
+	height: 100%;
+    text-align: center;
+}
