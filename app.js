@@ -4,6 +4,7 @@ var bodyParser			  = require("body-parser");
 var methodOverride		  = require("method-override");
 
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
 app.use(express.static( __dirname +"/public"));
 app.use(methodOverride("_method"));
 app.set("view engine", "ejs");
@@ -13,22 +14,22 @@ app.set("view engine", "ejs");
 // });
 
 app.get("/register", function(req, res){
-	res.render("register");
+	res.render("privy/register");
 });
 
 
 app.get("/login", function(req, res){
-	res.render("login");
+	res.render("privy/login");
 });
 
 
 app.get("/otp", function(req, res){
-	res.render("otp");
+	res.render("privy/otp");
 });
 
 
 app.get("/profile", function(req, res){
-	res.render("profileUser");
+	res.render("privy/profileUser");
 });
 
 

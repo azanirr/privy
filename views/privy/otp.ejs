@@ -1,4 +1,4 @@
-<%- include(".../partials/header") %>
+<%- include("../partials/header") %>
 
 <div class="container">
 	<div class="row">
@@ -21,12 +21,14 @@
 					</div>
 						<div class="form-group mx-5">
 							<button class="btn btn-lg btn-primary btn-block">Verifikasi</button>
-							<a class="mx-auto" href="/register">Kirim Ulang Kode Verifikasi</a>
-
-					</div>
+							<form action="http://pretest-qa.dcidev.id/api/v1/register/otp/request" method="POST">
+								<a class="mx-auto" href="/otp">Kirim Ulang Kode Verifikasi</a>
+							</form>
+							
+						</div>
 				</form>
 			</div>
 		</div>
 	</div>
 
-<%- include(".../partials/footer") %>
+<%- include("../partials/footer") %>
